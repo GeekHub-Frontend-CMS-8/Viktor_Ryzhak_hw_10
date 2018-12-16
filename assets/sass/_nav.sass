@@ -1,0 +1,75 @@
+.nav
+  display: flex
+  align-items: center
+  @media (max-width: 768px)
+    align-items: flex-start
+    flex-direction: column
+  &__icon
+    display: flex
+    justify-content: center
+    flex-direction: row
+    @media (max-width: 768px)
+      padding-bottom: 5px
+    &-home
+      display: flex
+      justify-content: center
+      width: 100px
+      @media (max-width: 768px)
+        justify-content: start
+      &:hover
+        background-color: $title-color
+    &-services
+      width: 100px
+      display: flex
+      justify-content: center
+      @media (max-width: 768px)
+        justify-content: start
+      &:hover
+        background-color: #df5c64
+    &-about
+      width: 100px
+      display: flex
+      justify-content: center
+      @media (max-width: 768px)
+        justify-content: start
+      &:hover
+        background-color: #91778e
+    &-work
+      width: 100px
+      display: flex
+      justify-content: center
+      @media (max-width: 768px)
+        justify-content: start
+      &:hover
+        background-color: #a1ca6c
+    &-contacts
+      width: 100px
+      display: flex
+      justify-content: center
+      @media (max-width: 768px)
+        justify-content: start
+      &:hover
+        background-color: #82c8bd
+    &-text
+      display: flex
+      padding-bottom: 20px
+      padding-top: 50px
+      border-bottom-left-radius: 10px
+      border-bottom-right-radius: 10px
+      border: 1px solid transparent
+      color: $default-color
+      font-family: $default__font-family
+      font-size: $extra-small__font-size
+      font-weight: $font-weight__normal
+      @media (max-width: 768px)
+        padding-left: 20px
+        padding-right: 20px
+        padding-top: 5px
+        padding-bottom: 5px
+        border-radius: 0
+        border-top-left-radius: 10px
+        border-bottom-left-radius: 10px
+
+
+
+
