@@ -23,10 +23,14 @@
       font-size: $extreme__font-size
       font-weight: $font-weight__light
       @media (max-width: 768px)
+        padding-top: 14px
+        padding-bottom: 14px
+        padding-left: 10px
         padding-right: 20px
         text-align: center
-      @media (max-width: 576px)
         font-size: $medium__font-size
+      @media (max-width: 576px)
+        font-size: $normal__font-size
         padding: 15px 10px
     &-subtext
       padding: 34px 20px
@@ -35,9 +39,12 @@
       font-size: $extra-extreme__font-size
       font-weight: $font-weight__normal
       text-transform: uppercase
+      @media (max-width: 768px)
+        padding: 5px 10px
+        font-size: $mobile-extra-extreme__font-size
       @media (max-width: 576px)
-        padding: 15px 10px
-        font-size: $extreme__font-size
+        padding: 5px 10px
+        font-size: $mobile-extreme__font-size
 .carousel
   &-wrapper
     width: 100%
@@ -62,8 +69,13 @@
     -ms-transition: left .5s ease-out
     -moz-transition: left .5s ease-out
     -webkit-transition: left .5s ease-out
+    @media (max-width: 768px)
+      padding-top: 50px
+      padding-bottom: 50px
+    @media (max-width: 576px)
+      padding-top: 50px
+      padding-bottom: 50px
   &-item
-
     display: block
     float: left
     width: 100%
