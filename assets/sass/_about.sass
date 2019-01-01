@@ -1,20 +1,36 @@
 .about
-  height: auto
   &__background
     background: url("../img/about/about__bg.png") center / cover no-repeat
     background-color: $about-background
-  &__header
-    padding-top: 32px
+  &__present
+    padding-top: 60px
+    padding-bottom: 30px
     display: flex
-    justify-content: space-between
+    justify-content: center
     align-items: center
-    @media (max-width: 768px)
-      align-items: baseline
+    &-text
+      position: relative
+      background-color: #a1ca6c
+      border-radius: 5px
+      padding: 16px 40px
+      color: #ffffff
+      font-family: $default__font-family
+      font-size: 25px
+      font-weight: 700
+      text-transform: uppercase
+      &:before
+        left: 42%
+        content: ""
+        display: block
+        position: absolute
+        top: 100%
+        border-left: 19px solid transparent
+        border-top: 19px solid #a1ca6c
+        border-right: 19px solid transparent
   &__items
     display: flex
-    flex-direction: revert
-    padding-top: 120px
-    padding-bottom: 120px
+    flex-wrap: wrap
+    justify-content: space-between
 
 
 

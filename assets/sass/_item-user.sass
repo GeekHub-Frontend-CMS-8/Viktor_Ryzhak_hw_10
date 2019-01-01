@@ -1,36 +1,64 @@
 .item-user
+  max-width: 275px
+  width: 100%
+  padding: 15% 0
   display: flex
-  flex-direction: column
-  align-items: center
-  padding: 4% 2%
-  max-width: 23%
-  background-color:  rgba(200, 83, 90, 0.8)
-  margin-left: 1%
-  margin-right: 1%
-  &-title
-    height: 130px
-    width: 130px
-    &-lightbulb
-      background: url("../img/services/lightbulb.png") center / cover no-repeat
-    &-mwand
-      background: url("../img/services/m-wand.png") center / cover no-repeat
-    &-glars
-      background: url("../img/services/glars.png") center / cover no-repeat
-    &-rocket
-      background: url("../img/services/rocket.png") center / cover no-repeat
-  &-subtitle
-    padding-top: 34px
-    color: #ffffff
+  margin: 0 auto
+  flex-direction: row
+
+  @media (min-width: 320px)
+    max-width: 100%
+    padding: 5% 0 0 0
+  @media (min-width: 768px)
+    max-width: 50%
+  @media (min-width: 1200px)
+    max-width: 25%
+  &__item
+    margin: 0 auto
+    display: flex
+    flex-direction: column
+    align-items: center
+    text-align: center
+    width: 90%
+    padding: 45px 0
+    background-color: rgba(77, 63, 75, 0.8)
+  &__face
+    height: 150px
+    width: 150px
+    background: url("../img/about/fase-shape-hower.png") center / cover no-repeat
+  &__title
+    width: 85%
+    padding-top: 31px
+    color: #c7b6c5
     font-family: Lato, sans-serif
-    font-size: 30px
-    font-weight: 300
+    font-size: 25px
+    font-weight: 700
     text-transform: uppercase
-  &-text
-    padding-top: 50px
-    color: #fefefe
+  &__subtitle
+    width: 85%
+    padding-top: 13px
+    color: #a1ca6c
     font-family: Lato, sans-serif
     font-size: 14px
     font-weight: 400
-    line-height: 20px
+  &__icons
+    width: 85%
+    padding-top: 37px
+    display: flex
+    flex-direction: row
+    justify-content: space-around
+    &-facebook
+      @include social-icon ($border-radius: 15px, $width: 30px, $height: 30px, $font-size: 16px, $font-weight: 700, $bg-color: #4f689e, $color: #fff)
+    &-twitter
+      @include social-icon ($border-radius: 15px, $width: 30px, $height: 30px, $font-size: 16px, $font-weight: 700, $bg-color: #74c7d5, $color: #fff)
+    &-google-plus
+      @include social-icon ($border-radius: 15px, $width: 30px, $height: 30px, $font-size: 16px, $font-weight: 700, $bg-color: #df5c64, $color: #fff)
+    &-linkedin
+      @include social-icon ($border-radius: 15px, $width: 30px, $height: 30px, $font-size: 16px, $font-weight: 700, $bg-color: #3e61af, $color: #fff)
+
+
+
+
+
 
 
