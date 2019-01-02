@@ -268,7 +268,8 @@ button {
 
 .services__background {
   background: url("../img/services/services__bg.png") center/cover no-repeat;
-  background-color: #b24a50; }
+  background-color: #b24a50;
+  padding-bottom: 90px; }
 
 .services__items {
   display: flex;
@@ -277,7 +278,8 @@ button {
 
 .about__background {
   background: url("../img/about/about__bg.png") center/cover no-repeat;
-  background-color: #665464; }
+  background-color: #665464;
+  padding-bottom: 90px; }
 
 .about__present {
   padding-top: 60px;
@@ -314,7 +316,8 @@ button {
   height: auto; }
   .work__background {
     background: url("../img/work/work__bg.jpg") center/cover no-repeat;
-    background-color: #81a256; }
+    background-color: #81a256;
+    padding-bottom: 90px; }
   .work__header {
     padding-top: 32px;
     display: flex;
@@ -518,21 +521,24 @@ button {
   .portfolio__header {
     padding: 32px 0;
     display: flex;
+    justify-content: space-between;
     width: 100%;
     border-top: 1px solid #94b963;
     border-bottom: 1px solid #94b963; }
     .portfolio__header-title {
       padding-left: 20px;
-      width: 50%;
       color: #ffffff;
       font-family: Lato, sans-serif;
       font-size: 20px;
       font-weight: 700;
       text-transform: uppercase; }
     .portfolio__header-type {
-      width: 50%;
       display: flex;
       justify-content: flex-end; }
+      @media (max-width: 768px) {
+        .portfolio__header-type {
+          align-items: flex-start;
+          flex-direction: column; } }
       .portfolio__header-type-icon {
         padding-left: 35px; }
       .portfolio__header-type-text {
@@ -574,14 +580,15 @@ button {
     text-align: center;
     width: 100%; }
   .item-portfolio__title {
+    width: 100%;
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 50px;
-    color: transparent; }
-    .item-portfolio__title:hover {
-      background-color: rgba(61, 77, 41, 0.7);
-      color: white; }
+    color: transparent;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px; }
     .item-portfolio__title-aenean {
       border-top-left-radius: 5px;
       border-top-right-radius: 5px;
@@ -630,6 +637,14 @@ button {
       width: 260px;
       height: 200px;
       background: url("../img/work/vestibulum_ante.jpg") center/cover no-repeat; }
+    .item-portfolio__title:hover {
+      background-color: rgba(61, 77, 41, 0.7);
+      color: white;
+      background-size: cover;
+      transition: .5s ease;
+      font-size: 50px;
+      width: 100%;
+      height: 100%; }
   .item-portfolio__subtitle {
     position: relative;
     width: 100%;
