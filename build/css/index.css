@@ -275,18 +275,17 @@ button {
 
 .services__background {
   background: url("../img/services/services__bg.png") center/cover no-repeat;
-  background-color: #b24a50;
-  padding-bottom: 90px; }
+  background-color: #b24a50; }
 
 .services__items {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between; }
+  justify-content: space-between;
+  padding-bottom: 90px; }
 
 .about__background {
   background: url("../img/about/about__bg.png") center/cover no-repeat;
-  background-color: #665464;
-  padding-bottom: 90px; }
+  background-color: #665464; }
 
 .about__present {
   padding-top: 60px;
@@ -317,19 +316,20 @@ button {
 .about__items {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between; }
+  justify-content: space-between;
+  padding-bottom: 90px; }
 
 .work {
   height: auto; }
   .work__background {
     background: url("../img/work/work__bg.jpg") center/cover no-repeat;
-    background-color: #81a256;
-    padding-bottom: 90px; }
+    background-color: #81a256; }
   .work__header {
     padding-top: 32px;
     display: flex;
     justify-content: space-between;
-    align-items: center; }
+    align-items: center;
+    padding-bottom: 90px; }
     @media (max-width: 768px) {
       .work__header {
         align-items: baseline; } }
@@ -909,7 +909,7 @@ button {
       letter-spacing: -0.35px; }
 
 .footer {
-  background-color: #68a097; }
+  background-color: rgba(255, 255, 255, 0.1); }
   .footer__icons {
     width: 85%;
     padding-top: 40px;
@@ -922,7 +922,7 @@ button {
       border-radius: 30px;
       width: 60px;
       height: 60px;
-      background-color: #82c7bc;
+      background-color: rgba(255, 255, 255, 0.3);
       display: flex;
       align-items: center;
       justify-content: center;
@@ -935,7 +935,7 @@ button {
           border-radius: 30px;
           width: 50px;
           height: 50px;
-          background-color: #82c7bc;
+          background-color: rgba(255, 255, 255, 0.3);
           display: flex;
           align-items: center;
           justify-content: center;
@@ -948,7 +948,7 @@ button {
           border-radius: 30px;
           width: 40px;
           height: 40px;
-          background-color: #82c7bc;
+          background-color: rgba(255, 255, 255, 0.3);
           display: flex;
           align-items: center;
           justify-content: center;
@@ -961,7 +961,7 @@ button {
           border-radius: 30px;
           width: 30px;
           height: 30px;
-          background-color: #82c7bc;
+          background-color: rgba(255, 255, 255, 0.3);
           display: flex;
           align-items: center;
           justify-content: center;
