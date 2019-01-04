@@ -10,10 +10,7 @@
         border-bottom: 1px solid #94b963
         &-title
             padding-left: 20px
-            color: #ffffff
-            font-family: Lato, sans-serif
-            font-size: 20px
-            font-weight: 700
+            @include text-style ($color: $color__default, $font-family: $font-family__default, $font-size: $font-size__small, $font-weight: $font-weight__bold)
             text-transform: uppercase
         &-type
             display: flex
@@ -24,7 +21,7 @@
             &-icon
                 padding-left: 35px
             &-text
-                @include text-style ($color: $default-color, $font-family: $default__font-family, $font-size: $tiny__font-size, $font-weight: $font-weight__bold)
+                @include text-style ($color: $color__default, $font-family: $font-family__default, $font-size: $font-size__tiny, $font-weight: $font-weight__bold)
                 padding: 10px
                 border-radius: 5px
                 &:hover
@@ -34,6 +31,11 @@
         display: flex
         flex-wrap: wrap
         justify-content: space-between
+        @media (max-width: 768px)
+            justify-content: center
+            padding-left: 20px
+            padding-right: 20px
+
 
 
 

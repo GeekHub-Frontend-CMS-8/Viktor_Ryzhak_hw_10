@@ -35,18 +35,10 @@
   &__subtitle
     width: 100%
     padding-top: 34px
-    color: #ffffff
-    font-family: Lato, sans-serif
-    font-size: 30px
-    font-weight: 300
+    @include text-style ($color: $color__default, $font-family: $font-family__default, $font-size: $font-size__medium, $font-weight: $font-weight__light)
     text-transform: uppercase
   &__text
     width: 85%
     padding-top: 50px
-    color: #fefefe
-    font-family: Lato, sans-serif
-    font-size: 14px
-    font-weight: 400
+    @include text-style ($color: #fefefe, $font-family: $font-family__default, $font-size: $font-size__extra-tiny, $font-weight: $font-weight__normal)
     line-height: 20px
-
-

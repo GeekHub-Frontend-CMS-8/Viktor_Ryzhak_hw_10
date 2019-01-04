@@ -1,10 +1,26 @@
 .form
+  padding-top: 122px
+  padding-bottom: 112px
   width: 50%
-  height: 100%
+  height: auto
   display: flex
   flex-direction: column
   @media (max-width: 1200px)
-    width: 100%
+    margin: 0 auto
+    width: 90%
+  @media (max-width: 768px)
+    padding-top: 80px
+    padding-bottom: 80px
+  @media (max-width: 576px)
+    padding-top: 40px
+    padding-bottom: 40px
+  @media (max-width: 320px)
+    padding-top: 20px
+    padding-bottom: 20px
+  &__title
+    @include text-style ($color: $color__default, $font-family: $font-family__default, $font-size: $font-size__medium, $font-weight: $font-weight__medium)
+    @media (max-width: 1200px)
+      text-align: center
   &__block
     display: flex
     justify-content: space-between
@@ -17,28 +33,13 @@
     display: flex
     flex-direction: column
     flex-wrap: wrap
-    box-sizing: border-box
     justify-content: center
-    @media (max-width: 1200px)
-      margin: 0 auto
-      max-width: 400px
-    @media (max-width: 800px)
-      max-width: 400px
-      padding-left: 10px
-      padding-right: 10px
-    @media (max-width: 500px)
-      max-width: 300px
-    @media (max-width: 400px)
-      max-width: 250px
-    &-window
 
+    &-window
       display: flex
       justify-content: space-between
       padding-top: 25px
-      color: $default-color
-      font-family: $default__font-family
-      font-size: $extra-tiny__font-size
-      font-weight: $font-weight__normal
+      @include text-style ($color: $color__default, $font-family: $font-family__default, $font-size: $font-size__extra-tiny, $font-weight: $font-weight__normal)
       letter-spacing: -0.35px
       &-input
         padding-left: 20px
@@ -47,14 +48,9 @@
         background-color: transparent
         border: 1px solid rgba(242, 242, 242, 0.7)
         border-radius: 5px
-        @media (max-width: 500px)
-          max-width: 200px
-        @media (max-width: 400px)
-          max-width: 150px
   &__button
     text-align: center
     padding-top: 30px
-    padding-bottom: 112px
     &-text
       width: 100%
       max-width: 260px
@@ -63,8 +59,5 @@
       background-color: #df5c64
       border-radius: 5px
       border: 0
-      color: $default-color
-      font-family: $default__font-family
-      font-size: $extra-tiny__font-size
-      font-weight: $font-weight__normal
+      @include text-style ($color: $color__default, $font-family: $font-family__default, $font-size: $font-size__extra-tiny, $font-weight: $font-weight__normal)
       letter-spacing: -0.35px
